@@ -1,7 +1,14 @@
 #include "main.h"
 /**
- * handle_print
- *
+ * handle_print- prints
+ * @fmt: fmt
+ * @ind: mdjd
+ * @list: lst commands
+ * @buffer: buffer
+ * @flags: kk
+ * @width: width
+ * @precision: akc
+ * @size: calculates
  * Return: 1 or 2;
  */
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],

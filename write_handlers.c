@@ -2,8 +2,13 @@
 
 /************************* WRITE HANDLE *************************/
 /**
- * char print a string
- * c : char types
+ * handle_write_char -  print a string
+ * @c : char types
+ * @buffer: code
+ * @flags: flag
+ * @width: wid
+ * @precision: calculations
+ * @size: size
  *
  * Return: Number of chars printed
  */
@@ -41,10 +46,15 @@ int handle_write_char(char c, char buffer[],
 
 /************************* WRITE NUMBER *************************/
 /**
- * write_number print a string
- * list arguments
- * buffer arrays to handle print
- * calculating active srings
+ * write_number - print a string
+ * @is_negative: nega
+ * @ind: list arguments
+ * @buffer: arrays to handle print
+ * @flags: calculating active srings
+ * @width: widt
+ * @precision: precise
+ * @size: size
+ *
  * Return: Number of chars printed.
  */
 int write_number(int is_negative, int ind, char buffer[],
@@ -70,10 +80,15 @@ int write_number(int is_negative, int ind, char buffer[],
 
 /**
  * write_num - Write a number using a bufffer
- * flags
- * width
- * precision
- * buffer
+ * @ind: Index at which the number starts on the buffer
+ * @buffer: Buffer
+ * @flags: Flags
+ * @width: width
+ * @prec: Precision specifier
+ * @length: Number length
+ * @padd: Pading char
+ * @extra_c: Extra char
+ *
  * Return: Number of printed chars.
  */
 int write_num(int ind, char buffer[],
@@ -124,11 +139,13 @@ int write_num(int ind, char buffer[],
 
 /**
  * write_unsgnd - Writes an unsigned number
- * Array of chars
- * flags specifiers
- * width specifier
- * recision specifier
- * size specifier
+ * @is_negative: index
+ * @ind: cas
+ * @buffer: Array of chars
+ * @flags: specifiers
+ * @width: specifier
+ * @precision: specifier
+ * @size: specifier
  *
  * Return: Number of written chars.
  */
@@ -182,10 +199,12 @@ int write_unsgnd(int is_negative, int ind,
  * write_pointer - Write a memory address
  * @buffer: Arrays of chars
  * @ind: Index at which the number starts in the buffer
- * length of number
- * width specifier
- * flags specifier
- *
+ * @length:of number
+ * @width: specifier
+ * @flags: specifier
+ * @padd: padd
+ * @extra_c: extra
+ * @padd_start: start
  * Return: Number of written chars.
  */
 int write_pointer(char buffer[], int ind, int length,
